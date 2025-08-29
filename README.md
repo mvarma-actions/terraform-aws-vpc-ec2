@@ -29,50 +29,50 @@ Before running this Terraform project, ensure the following are set up on your l
 
 ### 1. Install Terraform
 
-    1. Download Terraform from the official website:
-    
-        https://developer.hashicorp.com/terraform/downloads
+1. Download Terraform from the official website:
 
-    2. After installation, verify it using:
+   https://developer.hashicorp.com/terraform/downloads
 
-        ```bash
-        terraform -version
-        ```
+2. After installation, verify it using:
+
+   ```bash
+   terraform -version
+   ```
 
 ### 2. Configure AWS Credentials
 
-    Terraform needs AWS credentials to provision resources. You can configure them in one of the following ways:
+Terraform needs AWS credentials to provision resources. You can configure them in one of the following ways:
 
-    #### Option A: Using AWS CLI (Recommended)
+#### Option A: Using AWS CLI (Recommended)
 
-        1. Install the AWS CLI: 
-        
-            https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+1. Install the AWS CLI: 
+    
+   https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
 
-        2. Run the following command:
+2. Run the following command:
 
-            ```bash
-            aws configure
-            ```
+   ```bash
+   aws configure
+   ```
 
-        3. Enter your credentials when prompted:
-            
-            ```pgsql
-            AWS Access Key ID:       <your-access-key-id>
-            AWS Secret Access Key:   <your-secret-access-key>
-            Default region name:     us-east-2
-            Default output format:   json (or leave blank)
-            ```
+3. Enter your credentials when prompted:
+    
+   ```pgsql
+   AWS Access Key ID:       <your-access-key-id>
+   AWS Secret Access Key:   <your-secret-access-key>
+   Default region name:     us-east-2
+   Default output format:   json (or leave blank)
+   ```
 
-    #### Option B: Using Environment Variables
+#### Option B: Using Environment Variables
 
-        Alternatively, export your credentials directly in your terminal session:
+Alternatively, export your credentials directly in your terminal session:
 
-            ```bash
-            export AWS_ACCESS_KEY_ID=your-access-key-id
-            export AWS_SECRET_ACCESS_KEY=your-secret-access-key
-            export AWS_DEFAULT_REGION=us-east-2
-            ```
+```bash
+export AWS_ACCESS_KEY_ID=your-access-key-id
+export AWS_SECRET_ACCESS_KEY=your-secret-access-key
+export AWS_DEFAULT_REGION=us-east-2
+```
 
 ## Usage
 
